@@ -1,20 +1,24 @@
 <?php
-    require_once("ClassPersona.php");
-    class Cliente extends Persona
+    namespace Controllers;
+    //require_once("../models/Persona.php");
+    //require_once("../autoload.php");
+    use Models\Persona;
+    class Empleado extends Persona
     {
-        protected $fltCredito;
+        protected $strPuesto;
         function __construct(int $dpi, string $nombre, int $edad)
         {
             parent::__construct($dpi, $nombre, $edad);
+
         }
 
-        public function setCredito(string $credito)
+        public function setPuesto(string $puesto)
         {
-            $this->fltCredito = $credito;
+            $this->strPuesto = $puesto;
         }
-        public function getCredito():string
+        public function getPuesto():string
         {
-            return $this->fltCredito;
+            return $this->strPuesto;
         }
         public function getDatosPersonales()
         {

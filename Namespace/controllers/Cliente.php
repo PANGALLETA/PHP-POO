@@ -1,5 +1,8 @@
 <?php
-    require_once("ClassPersona.php");
+    namespace Controllers;
+    //require_once("../models/Persona.php");
+    //require_once("../autoload.php");
+    use Models\Persona;
     class Cliente extends Persona
     {
         protected $fltCredito;

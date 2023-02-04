@@ -1,5 +1,6 @@
 <?php
-    require_once("ClassPersona.php");
+    //require_once("ClassPersona.php");
+    require_once("autoload.php");
     class Cliente extends Persona
     {
         protected $fltCredito;
